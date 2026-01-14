@@ -27,6 +27,11 @@
         <link rel="stylesheet" href="./css/qna.css">
         <link rel="stylesheet" href="./css/animation.css">
         <link rel="stylesheet" href="./css/result.css">
+        <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+        <script>
+            Kakao.init('86d2d3131d284314f844587441628412');
+            Kako.isInitialized();
+        </script>
     </head>
     <body>
         <div class="container">
@@ -40,8 +45,7 @@
                     나만의 MBTI 사이트입니다! <br>
                     아래 시작하기 버튼을 눌러 시작해 주십시오. 
                 </p>
-                <button type="button" class="btn btn-outline-danger mt-3" 
-                onclick="begin()">시작하기</button>
+                <button type="button" class="btn btn-outline-danger mt-3" onclick="js:kakaoShare()">공유하기</button>
             </section>
             <section id="qna">
                 <div class="status mx-auto mt-5">
@@ -70,6 +74,7 @@
             </section>     
             <script src="./js/data.js" charset="utf-8"></script>
             <script src="./js/start.js" charset="utf-8"></script>
+            <script src="./js/share.js" charset="utf-8"></script>
         </div>       
     </body>
 </html>
