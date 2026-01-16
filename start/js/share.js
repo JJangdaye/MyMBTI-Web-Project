@@ -1,3 +1,13 @@
+ function setShare(){
+    var resultImg = document.querySelector('#resultImg');
+    var resultAlt = resultImg.firstElementChild.alt;
+    const shareTitle
+    const shareDes
+    const shareImage
+    const shareURL
+
+ }
+ 
  function kakaoShare(){
     Kakao.API.request({
     url: '/v2/api/talk/memo/default/send',

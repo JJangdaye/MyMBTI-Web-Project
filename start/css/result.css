@@ -21,15 +21,15 @@
     font-size: 20px;
 }
 
-.kakao{
+.gohome{
     color: white;
-    background-color: #FEE500;
+    background-color: pink;
     font-size: 20px;
     border: 0px;
     border-radius: 10px;
 }
 
-.kakaco:hover, .kakao:focus{
+.gohome:hover, .gohome:focus{
     background-color: whitesmoke;
-    color: #FEE500;
+    color: pink;
 }
