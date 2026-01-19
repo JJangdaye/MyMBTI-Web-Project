@@ -1,11 +1,34 @@
+const url = 'https://twelevelovetypes.netlify.app/';
+ 
  function setShare(){
     var resultImg = document.querySelector('#resultImg');
     var resultAlt = resultImg.firstElementChild.alt;
-    const shareTitle
-    const shareDes
-    const shareImage
-    const shareURL
-
+    const shareTitle = '십이간지 연애유형 결과';
+    const shareDes = infoList[resultAt].name;
+    const shareImage = url + 'img/image-' + resultAlt + '.png';
+    const shareURL = url + 'page/result-' +resultAlt + '.html';
+    
+    Kakao.Link.sendDefault({
+        objectType: 'feed',
+        content: {
+            titel: shareTitle,
+            description: shareDes,
+            imageUrl: shareImage,
+            link: {
+                mobileWebUrl: shareURL,
+                webUrl: shareURL
+            },
+        },
+        buttons: [
+            {
+                title: '결과 확인하기',
+                linkg: {
+                    mobileWebUrl: shareURL,
+                    webUrl: shareURL,
+                },
+            },
+        ]
+    });
  }
  
  function kakaoShare(){
